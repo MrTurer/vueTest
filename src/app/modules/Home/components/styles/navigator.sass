@@ -1,0 +1,42 @@
+.navigator
+  margin-bottom: 63px
+  form
+    display: flex
+    justify-content: space-between
+    input[type="submit"]
+      width: 145px
+      margin-top: auto
+      padding: 0
+  &__form-item
+    width: 296px
+    p
+      font-size: 14px
+      line-height: 22px
+      color: #000000
+      margin-bottom: 10px
+
+@media screen and (max-width: 1140px)
+  .navigator
+    margin-bottom: 70px
+    form
+      flex-wrap: wrap
+      input[type="submit"]
+        width: calc((100% - 20px) / 2)
+        margin-top: auto
+        margin-bottom: 12px
+    &__form-item
+      width: calc((100% - 20px) / 2)
+      margin-bottom: 12px
+
+@media screen and (max-width: 576px)
+  .navigator
+    margin-bottom: 46px
+    form
+      flex-direction: column
+      input[type="submit"]
+        width: 100%
+        margin-top: 0
+        margin-bottom: 0
+    &__form-item
+      width: 100%
+      margin-bottom: 24px

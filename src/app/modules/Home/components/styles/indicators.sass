@@ -1,0 +1,154 @@
+.indicators
+  padding-bottom: 40px
+  &__chart
+    margin-left: -15px
+    width: calc(100% + 15px)
+  &__setting
+    display: flex
+    justify-content: space-between
+    margin-bottom: 33px
+    flex-wrap: wrap
+    flex-direction: row
+    .ved-toggler
+      margin: auto 0 9px 0
+    &_title
+      width: 100%
+      margin-bottom: 10px
+      font-size: 14px
+      line-height: 22px
+      color: #333
+  form
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    .indicators_input
+      width: 283px
+    .ved-btn
+      width: 159px
+      margin-left: 77px
+    input[type="submit"]
+      padding: 0
+  &__list
+    display: flex
+    width: calc(100% + 10px)
+    overflow: auto
+    padding: 10px 0 0 10px
+    margin-left: -10px
+    box-sizing: border-box
+    -ms-overflow-style: none
+    overflow: -moz-scrollbars-none
+    &::-webkit-scrollbar
+      width: 0
+    &_loader
+      width: 100%
+      display: flex
+      justify-content: center
+  &__item
+    width: 765px
+    min-width: 765px
+    border-radius: 24px
+    box-shadow: 0 0 24px 0 #0000001A
+    padding: 0 30px 40px
+    box-sizing: border-box
+    &:first-child
+      margin-right: 80px
+    &_title
+      background: #0078C8
+      margin: 0 -30px 24px
+      padding: 15px 24px
+      font-weight: 700
+      font-size: 16px
+      line-height: 18px
+      color: #FFFFFF
+      border-radius: 24px 24px 0 0
+    &_country
+      font-weight: 700
+      font-size: 16px
+      line-height: 18px
+      margin-bottom: 17px
+    &_prompt
+      font-weight: 500
+      font-size: 14px
+      line-height: 17px
+      margin-bottom: 23px
+    table
+      width: 100%
+      border: 1px solid #D3DFE5
+      tr
+        td
+          padding: 8px 12px
+          width: 50%
+          &:first-child
+            border-right: 1px solid #D3DFE5
+      thead
+        border-bottom: 2px solid #01A39D
+        td
+          padding: 12px
+          p
+            font-weight: 500
+            font-size: 14px
+            line-height: 22px
+      tbody
+        tr:nth-child(2n + 1)
+          background: #E5F5FF
+        tr
+          td
+            font-size: 12px
+            line-height: 16px
+            color: #231F20
+            &:first-child
+              font-weight: 500
+          &:last-child
+            td
+              font-weight: 700
+
+@media screen and (max-width: 1250px)
+  .indicators
+    padding-bottom: 0
+    form
+      .ved-btn
+        margin-left: 13px
+    &__list
+      display: flex
+      flex-wrap: wrap
+      overflow: hidden
+      justify-content: center
+      margin: 0
+      width: 100%
+      padding: 0 0 10px 0
+    &__item
+      width: 705px
+      min-width: 705px
+      max-width: 100%
+      margin: 0 0 50px
+      &:first-child
+        margin-right: 0
+
+@media screen and (max-width: 768px)
+  .indicators
+    &__setting
+      margin-bottom: 35px
+      .ved-toggler
+        margin: 0
+        order: 2
+      &_title
+        width: 50px
+        margin-bottom: 0
+        order: 1
+        line-height: 26px
+    form
+      margin-top: 20px
+      order: 3
+      width: 100%
+      .ved-btn
+        width: 176px
+        margin-left: 16px
+        max-width: calc((100% - 16px) / 2)
+      .indicators_input
+        max-width: calc((100% - 16px) / 2)
+        width: 177px
+    &__list
+      padding-bottom: 0
+    &__item
+      width: 100%
+      min-width: 100%

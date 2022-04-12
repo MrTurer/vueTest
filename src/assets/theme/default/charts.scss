@@ -1,0 +1,46 @@
+.compare {
+  .apexcharts-legend-series {
+    width: 130px;
+    display: flex !important;
+  }
+  span {
+    display: block;
+    margin-bottom: -3px;
+    margin-left: 3px;
+  }
+  .apexcharts-tooltip.apexcharts-theme-dark {
+    background: none;
+    box-shadow: none;
+  }
+}
+.indicators {
+  .apexcharts-xaxis-label {
+    display: flex;
+
+  }
+}
+.circle-chart__prompt {
+  padding: 20px 23px;
+  background: #fff;
+  color: #787F8F;
+  font-size: 12px;
+  line-height: 16px;
+  border: 1px solid #D6E4EC;
+  margin-bottom: 40px;
+  position: relative;
+  margin-left: 130px;
+  margin-top: 70px;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    bottom: -30px;
+    clip-path: polygon(30% 0, 0 100%, 100% 0);
+    background: #fff;
+    width: 40px;
+    height: 40px;
+  }
+  span {
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,17 @@
+.ved-btn {
+  background: linear-gradient(270deg, #01B2AB 0%, #017AC8 100%);
+  border-radius: 24px;
+  line-height: 46px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  border: 0;
+  transition: .2s;
+}
+.ved-btn:hover {
+  background: linear-gradient(270deg, #00CCC3 0%, #0087E0 100%);
+}
+.ved-btn[disabled] {
+  background: #787F8F;
+}

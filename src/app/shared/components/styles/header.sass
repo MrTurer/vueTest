@@ -1,0 +1,151 @@
+.header
+  padding: 10px 0
+  margin-bottom: 50px
+  .container
+    display: flex
+  .header_logo
+    svg
+      color: #b4e1ff
+  nav
+    margin: auto
+    & > ul
+      display: flex
+      & > li
+        margin-right: 15px
+        &:last-child
+          margin-right: 0
+        ul
+          display: none
+          position: absolute
+          bottom: 1px
+          left: 0
+          transform: translateY(100%)
+          background: #fff
+          z-index: 100
+          box-shadow: 0 0 24px 0 #0000001a
+          padding: 20px
+          width: max-content
+          box-sizing: border-box
+        &:hover
+          ul
+            display: block
+          .icon
+            transform: rotate(180deg)
+    li
+      position: relative
+      padding-right: 18px
+    a
+      color: #0093BA
+      font-size: 12px
+      line-height: 14px
+    .icon
+      position: absolute
+      color: #0093BA
+      top: 8px
+      right: 0
+      transition: .2s
+  .header_auth-link
+    margin: auto 6px auto 30px
+    color: #0093BA
+    font-size: 12px
+  .header_lang
+    font-size: 12px
+    line-height: 24px
+    color: #0093BA
+    margin: auto 0
+
+
+@media screen and (min-width: 1241px)
+  .header
+    &_burger-btn
+      display: none !important
+
+@media screen and (max-width: 1240px)
+  .header
+    margin-bottom: 10px
+    box-shadow: 0 0 20px 0 #0000001F
+    border-radius: 0 0 24px 24px
+    position: relative
+    .container
+      flex-direction: row
+      flex-wrap: wrap
+    &_logo
+      order: 1
+    nav
+      margin: 0
+      width: 100%
+      transition: .6s
+      z-index: 1050
+      order: 5
+      max-height: 0
+      display: flex
+      overflow: hidden
+      &.open
+        max-height: 1200px
+      & > ul
+        margin: 0 auto
+        flex-direction: column
+        width: 260px
+        & > li
+          margin-right: 0
+          margin-bottom: 24px
+          display: flex
+          flex-wrap: wrap
+          width: 100%
+          padding-right: 0
+          .icon
+            order: 2
+            position: static
+            margin-left: 10px
+            transition: .2s
+          &:hover
+            .icon
+              transform: rotate(180deg)
+          & > a
+            order: 1
+          &:last-child
+            margin-bottom: 12px
+          ul
+            position: static
+            transform: translateY(0)
+            background: none
+            box-shadow: none
+            box-sizing: border-box
+            order: 3
+            width: calc(100% - 30px)
+            padding: 0
+            margin: 10px 0 0 30px
+            li
+              margin-bottom: 10px
+              padding-right: 0
+              max-width: 100%
+      li
+        position: relative
+        padding-right: 18px
+    &_burger-btn
+      order: 2
+      color: #0093BA
+      margin: auto 0 auto auto
+    .header_auth-link
+      order: 3
+      margin-left: 10px
+    &_lang
+      order: 4
+
+@media screen and (max-width: 767px)
+  .header
+    &__wrapper
+      margin: auto -14px auto 14px
+    &__scroll-wrapper
+      width: 1070px
+      padding-right: 14px
+
+@media screen and (max-width: 576px)
+  .header
+    &_logo
+      width: 58px
+      height: 58px
+
+
+
+

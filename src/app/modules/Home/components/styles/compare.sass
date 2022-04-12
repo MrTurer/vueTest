@@ -1,0 +1,42 @@
+.compare
+  &__list
+    display: flex
+    padding-bottom: 60px
+  &__item
+    width: 50%
+    display: flex
+    flex-direction: column
+    &_title
+      font-weight: 700
+      font-size: 16px
+      line-height: 21px
+      color: #0078C8
+      display: flex
+      span
+        margin-left: 55px
+    & > div
+      margin: 45px auto 0
+      width: 100%
+  &_loader
+    width: 100%
+    display: flex
+    justify-content: center
+
+@media screen and (max-width: 1240px)
+  .compare
+    &__list
+      padding-bottom: 45px
+
+@media screen and (max-width: 767px)
+  .compare
+    &__list
+      flex-direction: column
+      padding-bottom: 25px
+    &__item
+      width: 100%
+      margin: 0 0 43px
+      &_title
+        span
+          margin-left: 50px
+      & > div
+        margin: 15px auto 0

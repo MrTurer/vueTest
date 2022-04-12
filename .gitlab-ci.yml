@@ -1,0 +1,4 @@
+html-update:
+    script: cd $SITE_ROOT_DIR && git reset --hard && git pull && npm install && yarn build && cp runtime-config.js.dist dist/js/runtime-config.js && echo "Done!"
+    only:
+      - main
